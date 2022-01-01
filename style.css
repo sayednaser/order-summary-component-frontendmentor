@@ -1,15 +1,23 @@
 /* Color Palette
-* Pale blue: hsl(225, 100%, 94%)
-* Bright blue: hsl(245, 75%, 52%)
-* Very pale blue: hsl(225, 100%, 98%)
-* Desaturated blue: hsl(224, 23%, 55%)
-* Dark blue: hsl(223, 47%, 23%)
+* Pale blue: hsl(225, 100%, 94%) x
+* Bright blue: hsl(245, 75%, 52%) x
+* Very pale blue: hsl(225, 100%, 98%) x
+* Desaturated blue: hsl(224, 23%, 55%) x
+* Dark blue: hsl(223, 47%, 23%) x
 */
 
 /* Font
 * Family: Red Hat Display
 * Weights: 500, 700, 900
 */
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html {
   font-size: 62.5%;
@@ -21,4 +29,108 @@ body {
   font-weight: 500;
   line-height: 1.7;
   color: hsl(224, 23%, 55%);
+
+  background-color: hsl(225, 100%, 94%);
 }
+
+.u-margin-big {
+    margin-bottom: 3rem;
+}
+
+.u-margin-medium {
+    margin-bottom: 2.5rem;
+}
+
+.card-container {
+    margin-top: 5rem;
+}
+
+.card {
+    
+    width: 45rem;
+    margin: auto;
+    border-radius: 2rem;
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.card-hero-img img {
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card-body {
+    padding: 0 4.8rem 3.6rem;
+
+}
+
+.card-primary-heading {
+    line-height: normal;
+    font-size: 2.8rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    text-align: center;
+    
+}
+
+.card-description {
+    text-align: center;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.card-subscription {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 1rem;
+
+}
+
+.card-subscription {
+    padding: 2.4rem;
+}
+
+.card-subscription-icon {
+    display: block;
+}
+
+.card-subscription-description-heading {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.btn, .btn:link, .btn:visited {
+    text-decoration: none;
+    /* padding: 1.5rem 4rem; */
+    display: block;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 1.4rem   ;
+    font-weight: 700;
+    
+}
+
+.card-subscription-btn, .card-subscription-btn:link, .card-subscription-btn:visited {
+    text-decoration: underline;
+}
+
+.card-proceed-btn {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(245, 75%, 52%);
+    line-height: 3.2;
+
+}
+
+.card-cancel-btn {
+    color: inherit;
+    width: fit-content;
+    margin: auto;
+}
+
+.card-subscription-btn:hover {
+    color: hsl(245, 83%, 68%);
+}
+.card-proceed-btn:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+.card-cancel-btn:hover {
+        color: hsl(223, 47%, 23%);
+    }
