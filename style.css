@@ -27,110 +27,146 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
-  line-height: 1.7;
+  line-height: 1.6;
   color: hsl(224, 23%, 55%);
 
   background-color: hsl(225, 100%, 94%);
 }
 
 .u-margin-big {
-    margin-bottom: 3rem;
+  margin-bottom: 3.8rem;
+}
+
+.u-margin-small {
+  margin-bottom: 1.8rem;
 }
 
 .u-margin-medium {
-    margin-bottom: 2.5rem;
+  margin-bottom: 3.1rem;
 }
 
 .card-container {
-    margin-top: 5rem;
+  min-height: 100vh;
+  /* margin-top: 10.15rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .card {
-    
-    width: 45rem;
-    margin: auto;
-    border-radius: 2rem;
-    background-color: hsl(0, 0%, 100%);
-    
+  width: 45rem;
+  border-radius: 2.2rem;
+  background-color: hsl(0, 0%, 100%);
+  margin: auto;
 }
 
 .card-hero-img img {
-    border-radius: 2rem 2rem 0 0;
+  border-radius: 2.2rem 2.2rem 0 0;
+  width: 100%;
 }
 
 .card-body {
-    padding: 0 4.8rem 3.6rem;
-
+  padding: 0 4.8rem 4.5rem;
 }
 
 .card-primary-heading {
-    line-height: normal;
-    font-size: 2.8rem;
-    font-weight: 900;
-    color: hsl(223, 47%, 23%);
-    text-align: center;
-    
+  line-height: normal;
+  font-size: 2.8rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
 }
 
 .card-description {
-    text-align: center;
-    border-radius: 2rem 2rem 0 0;
+  text-align: center;
+  border-radius: 2rem 2rem 0 0;
 }
 
 .card-subscription {
-    background-color: hsl(225, 100%, 98%);
-    border-radius: 1rem;
-
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 1rem;
 }
 
 .card-subscription {
-    padding: 2.4rem;
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
 }
 
 .card-subscription-icon {
-    display: block;
+  margin-right: 1.9rem;
 }
 
 .card-subscription-description-heading {
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
 }
 
-.btn, .btn:link, .btn:visited {
-    text-decoration: none;
-    /* padding: 1.5rem 4rem; */
-    display: block;
-    border-radius: 1rem;
-    text-align: center;
-    font-size: 1.4rem   ;
-    font-weight: 700;
-    
+.card-subscription-btn {
+  color: hsl(245, 75%, 52%);
+  text-align: right;
+  margin-left: auto;
+}
+.card-subscription-btn,
+.card-subscription-btn:link,
+.card-subscription-btn:visited {
 }
 
-.card-subscription-btn, .card-subscription-btn:link, .card-subscription-btn:visited {
-    text-decoration: underline;
+.btn-inline,
+.btn-inline:link,
+.btn-inline:visited {
+  font-size: 1.4rem;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  /* padding: 1.5rem 4rem; */
+  display: block;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 
 .card-proceed-btn {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(245, 75%, 52%);
-    line-height: 3.2;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(245, 75%, 52%);
+  line-height: 3.3;
 
+  box-shadow: 0px 30px 10px hsl(225, 100%, 94%);
 }
 
 .card-cancel-btn {
-    color: inherit;
-    width: fit-content;
-    margin: auto;
+  color: inherit;
+  width: fit-content;
+  margin: auto;
 }
 
 .card-subscription-btn:hover {
-    color: hsl(245, 83%, 68%);
+  color: hsl(245, 83%, 68%);
 }
 .card-proceed-btn:hover {
-    background-color: hsl(245, 83%, 68%);
+  background-color: hsl(245, 83%, 68%);
 }
 .card-cancel-btn:hover {
-        color: hsl(223, 47%, 23%);
-    }
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 376px) {
+  html {
+    font-size: 45.5%;
+  }
+
+  .card-container {
+    background-image: url(images/pattern-background-desktop.svg);
+  }
+} ;
